@@ -15,7 +15,7 @@ Dog::Dog(const std::string &type) : Animal(type)
 Dog::Dog(const Dog &dog) : Animal(dog)
 {
     std::cout << "Dog copy constructor called" << std::endl;
-    this->brain = new Brain(*dog.brain); // Deep copy
+    this->brain = new Brain(*dog.brain);
 }
 
 Dog::~Dog()

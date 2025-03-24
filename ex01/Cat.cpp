@@ -15,7 +15,7 @@ Cat::Cat(const std::string &type) : Animal(type)
 Cat::Cat(const Cat &cat) : Animal(cat)
 {
     std::cout << "Cat copy constructor called" << std::endl;
-    this->brain = new Brain(*cat.brain); // Deep copy
+    this->brain = new Brain(*cat.brain);
 }
 
 Cat::~Cat()
@@ -31,7 +31,7 @@ Cat &Cat::operator=(const Cat &cat)
     {
         Animal::operator=(cat);
         delete this->brain;
-        this->brain = new Brain(*cat.brain); // Deep copy
+        this->brain = new Brain(*cat.brain);
     }
     return *this;
 }

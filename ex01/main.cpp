@@ -47,10 +47,10 @@ int main()
     
     Cat *cat = new Cat();
     cat->setIdea(0, "I want to sleep all day long");
-    
+    std::cout << std::endl;
     std::cout << "Dog's idea: " << dog->getIdea(0) << std::endl;
     std::cout << "Cat's idea: " << cat->getIdea(0) << std::endl;
-    
+    std::cout << std::endl;
     delete dog;
     delete cat;
     
