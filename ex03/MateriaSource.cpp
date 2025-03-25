@@ -29,7 +29,7 @@ MateriaSource & MateriaSource::operator=(const MateriaSource & rhs)
         for (int i = 0; i < 4; i++)
             if (this->templates[i])
                 delete this->templates[i];
-                for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
             this->templates[i] = rhs.templates[i] ? rhs.templates[i]->clone() : NULL;
     }
     return *this;

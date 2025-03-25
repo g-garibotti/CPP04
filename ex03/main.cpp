@@ -45,14 +45,11 @@ void advancedTest()
     src->learnMateria(new Ice());
     std::cout << std::endl;
     
-    // Create materias
     AMateria *m1 = src->createMateria("ice");
     AMateria *m2 = src->createMateria("cure");
-    AMateria *m3 = src->createMateria("unknown");
     
     std::cout << "M1 type: " << m1->getType() << std::endl;
     std::cout << "M2 type: " << m2->getType() << std::endl;
-    std::cout << "M3: " << (m3 ? m3->getType() : "NULL") << std::endl;
     
     std::cout << "\n--- Testing Character ---" << std::endl;
     Character *hero = new Character("hero");
